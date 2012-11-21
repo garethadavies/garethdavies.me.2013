@@ -1,5 +1,6 @@
-/* Author:
-
+/*
+Initialise
+by Gareth Davies
 */
 
 $(function() {
