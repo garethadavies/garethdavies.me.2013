@@ -54,8 +54,8 @@
 		background: #fff;
 		border-top: 10px solid #181818;
 		font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		line-height: 20px;
-		line-height: 2rem;
+		line-height: 22px;
+		line-height: 2.2rem;
 		color: #111;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
