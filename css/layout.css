@@ -73,6 +73,14 @@
 			width: 100%;
 		}
 
+		.button,
+		.button:visited,
+		button {
+			
+			width: 90%;
+
+		}
+
 	}
 
 
