@@ -28,6 +28,11 @@
 
 		img { width:100%; }
 
+		.no-list li {
+			float: none;
+			width: 100%;
+		}
+
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -36,34 +41,25 @@
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 
-		.no-list li {
-			float: none;
-			width: 100%;
-		}
+		
 
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-		h1 { font-size: 34px; font-size: 3.4rem; line-height: 42px; margin-bottom: 18px;}
-		h2 { font-size: 28px; font-size: 2.8rem; line-height: 40px; margin-bottom: 18px; }
-		h3 { font-size: 22px; font-size: 2.2rem; line-height: 34px; margin-bottom: 14px; }
-		h4 { font-size: 18px; font-size: 1.8rem; line-height: 30px; margin-bottom: 14px; }
-		h5 { font-size: 16px; font-size: 1.6rem; line-height: 24px; }
-		h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; }
+		h1 { font-size: 40px; font-size: 4.0rem; line-height: 42px; margin-bottom: 18px;}
+		h2 { font-size: 32px; font-size: 3.2rem; line-height: 40px; margin-bottom: 18px; }
 
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 
-		h1 { font-size: 44px; font-size: 4.4rem; line-height: 42px; margin-bottom: 18px;}
-		h2 { font-size: 34px; font-size: 3.4rem; line-height: 40px; margin-bottom: 18px; }
-		h3 { font-size: 28px; font-size: 2.8rem; line-height: 34px; margin-bottom: 14px; }
-		h4 { font-size: 22px; font-size: 2.2rem; line-height: 30px; margin-bottom: 14px; }
-		h5 { font-size: 18px; font-size: 1.8rem; line-height: 24px; }
-		h6 { font-size: 16px; font-size: 1.6rem; line-height: 21px; }
+		body { font-size: 16px; font-size: 1.6rem; }
+
+		h1 { font-size: 34px; font-size: 3.4rem; line-height: 42px; margin-bottom: 18px;}
+		h2 { font-size: 28px; font-size: 2.8rem; line-height: 40px; margin-bottom: 18px; }
 
 		hr { margin: 60px 0 30px; }
 
@@ -75,6 +71,14 @@
 		.column-left,
 		.column-right {
 			width: 100%;
+		}
+
+		.button,
+		.button:visited,
+		button {
+			
+			width: 90%;
+
 		}
 
 	}
