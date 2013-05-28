@@ -1,0 +1,33 @@
+---
+layout: default
+title: Welcome to Your New, Shiny Blog!
+---
+
+<header class="invisible">
+	<h1>Posts</h1>
+</header>
+
+{% for post in paginator.posts %}
+	<article class="index post">
+		<header>
+			<h1>{{ post.title | markdownify | strip_html }}</h1>
+			<p class="meta"><a href="{{ post.url }}"><time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date: "%B %d, %Y" }}</time></a></p>
+		</header>
+		{{ post.content | postmorefilter: page.url, "Read the rest of this entry" }}
+	</article>
+{% endfor %}
+
+<aside class="pagination">
+	<header class="invisible">
+		<h1>Pagination</h1>
+	</header>
+
+	{% if paginator.previous_page == 1 %}
+		<span id="newer"><a href="/">Newer Entries</a></span>
+	{% elsif paginator.previous_page %}
+		<span id="newer"><a href="/page{{ paginator.previous_page }}">Newer Entries</a></span>
+	{% endif %}
+	{% if paginator.next_page %}
+		<span id="older"><a href="/page{{ paginator.next_page }}">Older Entries</a></span>
+	{% endif %}
+</aside>
